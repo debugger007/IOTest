@@ -4,8 +4,11 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
+
+const double PI = 3.14159265;
 
 int main()
 {
@@ -34,6 +37,36 @@ int main()
 	cin.get(ch);
 	cout << "Line 13: After cin.get(ch); ch = "
 		<< ch << endl;
+
+	cout << endl;
+
+	//
+	//
+	//
+	double radius = 12.67;
+	double height = 12.00;
+
+	cout << fixed << showpoint;
+	cout << setprecision(2);
+	cout << "Precision = 2" << endl;
+	cout << "radius = " << radius << endl;
+	cout << "height = " << height << endl;
+	cout << "volume = " << PI * radius * radius * height << endl;
+	cout << endl << endl;
+
+	cout << setprecision(3) << endl;
+	cout << "Precision = 4" << endl;
+	cout << "radius = " << radius << endl;
+	cout << "height = " << height << endl;
+	cout << "volume = " << PI * radius * radius * height << endl;
+	cout << endl;
+
+	cout << setprecision(4) << endl;
+	cout << "Precision = 4" << endl;
+	cout << "radius = " << radius << endl;
+	cout << "height = " << height << endl;
+	cout << "volume = " << PI * radius * radius * height << endl;
+	cout << endl;
 
     return 0;
 }
