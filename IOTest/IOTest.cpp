@@ -41,7 +41,7 @@ int main()
 	cout << endl;
 
 	//
-	// Precision test
+	// Precision test and outputs
 	//
 	double radius = 12.67;
 	double height = 12.00;
